@@ -14,8 +14,6 @@ class AuthController extends Controller
         $validated = $request->validate([
             'email' => 'required|email',
             'password' => 'required',
-            // 'latitude' => 'required',
-            // 'longitude' => 'required'
         ]);
 
         // Attempt to authenticate the user
